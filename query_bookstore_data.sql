@@ -1,7 +1,4 @@
 
-USE `BookstoreDB`;
-
-
 SELECT `c`.`Name` AS `CustomerName`, `o`.`OrderDate`, `b`.`Title` AS `BookTitle`, `od`.`Quantity`
 FROM `Customers` `c`
 JOIN `Orders` `o` ON `c`.`CustomerID` = `o`.`CustomerID`
